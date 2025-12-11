@@ -11,9 +11,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/30">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
+              <img 
+                src="https://cdn-ai.onspace.ai/onspace/files/B3r8RRdV5T4LdHisrGu8qc/generated-image_(4).png" 
+                alt="WanderStay Logo" 
+                className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
               <span className="font-display text-2xl font-bold text-gradient">
                 WanderStay
               </span>
