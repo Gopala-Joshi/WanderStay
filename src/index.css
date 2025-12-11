@@ -90,7 +90,7 @@
   }
   
   .glass-strong {
-    @apply bg-white/90 dark:bg-card/90 backdrop-blur-2xl border border-white/30 dark:border-white/20;
+    @apply bg-white/95 dark:bg-card/95 backdrop-blur-2xl border border-white/40 dark:border-white/30 shadow-2xl;
   }
   
   .glass-subtle {

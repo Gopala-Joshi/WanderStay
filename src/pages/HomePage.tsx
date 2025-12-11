@@ -144,30 +144,30 @@ export default function HomePage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" ref={featuresRef} className="py-24 bg-muted/30">
+      <section id="how-it-works" ref={featuresRef} className="py-24 bg-background relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-display text-display-sm mb-4">
+            <h2 className="font-display text-display-sm mb-4 text-foreground">
               Why Choose <span className="text-gradient">WanderStay</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
               Smart hotel booking with data-driven insights for better decisions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-30">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="feature-card glass p-8 rounded-2xl card-hover"
+                className="feature-card glass-strong p-8 rounded-2xl card-hover border border-border/50 shadow-xl relative z-40"
               >
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center mb-6 shadow-lg shadow-primary-500/30">
                   <feature.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3">
+                <h3 className="font-display text-xl font-semibold mb-3 text-foreground">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-foreground/70 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
