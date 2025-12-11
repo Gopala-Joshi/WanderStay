@@ -159,15 +159,15 @@ export default function HomePage() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="feature-card glass-strong p-8 rounded-2xl card-hover border border-border/50 shadow-xl relative z-40"
+                className="feature-card bg-white dark:bg-card p-8 rounded-2xl card-hover border-2 border-primary-200 dark:border-primary-900/50 shadow-2xl relative z-40 hover:border-primary-400 transition-colors"
               >
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center mb-6 shadow-lg shadow-primary-500/30">
                   <feature.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3 text-foreground">
+                <h3 className="font-display text-xl font-semibold mb-3 text-gray-900 dark:text-white">
                   {feature.title}
                 </h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
