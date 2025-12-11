@@ -90,12 +90,6 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">
               © {currentYear} WanderStay. All rights reserved.
             </p>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/50 border border-border/50">
-              <Sparkles className="w-3.5 h-3.5 text-primary-500" />
-              <span className="text-xs font-medium text-muted-foreground">
-                Built with OnSpace AI
-              </span>
-            </div>
           </div>
         </div>
       </div>
